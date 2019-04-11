@@ -16,3 +16,4 @@ Caffeinated Menus 2.0
 Elibyy Tcpdf-laravel 5.2
 Maatwebsite Excel 2.1.0
 
+<img src="images/karyati/1.png" alt="alt text" class="img-responsive">
