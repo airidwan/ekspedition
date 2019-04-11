@@ -1,0 +1,9 @@
+{
+	"name": "Payable",
+	"slug": "payable",
+	"namespace": "Payable",
+	"version": "1.0",
+	"author": " ",
+	"license": "MIT",
+	"description": "modul payable"
+}

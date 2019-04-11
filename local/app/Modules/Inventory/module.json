@@ -1,0 +1,9 @@
+{
+	"name": "Inventory",
+	"slug": "inventory",
+	"namespace": "Inventory",
+	"version": "1.0",
+	"author": " ",
+	"license": "MIT",
+	"description": "modul inventory"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Accountreceivables",
+	"slug": "accountreceivables",
+	"namespace": "Accountreceivables",
+	"version": "1.0",
+	"author": "icol",
+	"license": "MIT",
+	"description": "AR"
+}

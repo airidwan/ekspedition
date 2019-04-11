@@ -1,0 +1,9 @@
+{
+	"name": "Generalledger",
+	"slug": "generalledger",
+	"namespace": "Generalledger",
+	"version": "1.0",
+	"author": " ",
+	"license": "MIT",
+	"description": "modul GL"
+}

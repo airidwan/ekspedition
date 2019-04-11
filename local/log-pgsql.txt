@@ -1,0 +1,23 @@
+-- View: op.v_received_ant_taken_resi
+
+-- DROP VIEW op.v_received_ant_taken_resi;
+
+CREATE OR REPLACE VIEW op.v_received_ant_taken_resi AS 
+ SELECT trans_resi_header.resi_header_id, trans_resi_header.resi_number, 
+    sum(trans_resi_line.coly) AS total_coly, 
+    ( SELECT COALESCE(sum(trans_receipt_or_return_delivery_line.total_coly), 0::bigint) AS "coalesce"
+           FROM op.trans_receipt_or_return_delivery_line
+      JOIN op.trans_delivery_order_line ON trans_receipt_or_return_delivery_line.delivery_order_line_id = trans_delivery_order_line.delivery_order_line_id
+     WHERE trans_delivery_order_line.resi_header_id = trans_resi_header.resi_header_id AND trans_receipt_or_return_delivery_line.status::text = 'Received'::text) AS coly_received, 
+    ( SELECT COALESCE(sum(trans_customer_taking_transact.coly_taken), 0::bigint) AS "coalesce"
+           FROM op.trans_customer_taking_transact
+      JOIN op.trans_customer_taking ON trans_customer_taking.customer_taking_id = trans_customer_taking_transact.customer_taking_id
+     WHERE trans_customer_taking.resi_header_id = trans_resi_header.resi_header_id) AS coly_taken
+   FROM op.trans_resi_header
+   JOIN op.trans_resi_line ON trans_resi_line.resi_header_id = trans_resi_header.resi_header_id
+  GROUP BY trans_resi_header.resi_header_id, trans_resi_header.resi_number;
+
+ALTER TABLE op.v_received_ant_taken_resi
+  OWNER TO dck;
+GRANT ALL ON TABLE op.v_received_ant_taken_resi TO dck;
+GRANT SELECT, UPDATE, INSERT ON TABLE op.v_received_ant_taken_resi TO "karyatiGroup";

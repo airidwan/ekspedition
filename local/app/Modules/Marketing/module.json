@@ -1,0 +1,9 @@
+{
+	"name": "marketing",
+	"slug": "marketing",
+	"namespace": "Marketing",
+	"version": "1.0",
+	"author": "icol",
+	"license": "MIT",
+	"description": "modul marketing"
+}

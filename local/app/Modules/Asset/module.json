@@ -1,0 +1,9 @@
+{
+	"name": "Asset",
+	"slug": "asset",
+	"namespace": "Asset",
+	"version": "1.0",
+	"author": "me",
+	"license": "MIT",
+	"description": "asset module"
+}

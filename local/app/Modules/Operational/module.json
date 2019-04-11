@@ -1,0 +1,9 @@
+{
+	"name": "Operational",
+	"slug": "operational",
+	"namespace": "Operational",
+	"version": "1.0",
+	"author": " ",
+	"license": "MIT",
+	"description": "This is the description for the Operational module."
+}

@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'welcome' => 'Welcome',
+    'ganti-role-cabang' => 'Change Role or Branch',
+    'role' => 'Role',
+    'cabang' => 'Branch',
+    'change-profile' => 'Change Profile',
+    'change-password' => 'Change Password',
+    'lock-me' => 'Lock Me',
+    'logout' => 'Logout',
+    'total-resi' => 'Total Resi',
+    'total-manifest' => 'Total Manifest',
+    'total-do' => 'Total DO',
+    'total-resi-received' => 'Total Resi Received',
+    'total-resi-per-month' => 'Total Resi Per Month',
+    'total-do-per-month' => 'Total DO Per Month',
+
+    'total-transaksi' => 'Total Transaction',
+    'total-pengiriman' => 'Total Shipments',
+    'barang-sampai' => 'Commodity Arrived',
+    'total-order' => 'Total Order',
+    'pengiriman-berhasil' => 'Number of Success Shipments',
+    'pertumbuhan-perusahaan' => 'Company Growth',
+    'jalur-pengiriman' => 'Shipping Lane',
+    'dalam-kota' => 'In Town',
+    'luar-kota' => 'Out of Town',
+    'kantor-pusat' => 'Head Office',
+    'kantor-cabang' => 'Branch Office',
+    'darat' => 'Land',
+    'laut' => 'Sea',
+    'udara' => 'Air',
+];
