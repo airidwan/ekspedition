@@ -3,7 +3,7 @@ Sistem ERP EKspedisi
 
 Teknologi yang digunakan
 
-Laravel 5.4
+Laravel 5.2
 PHP
 HTML
 CSS
